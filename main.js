@@ -1,0 +1,4 @@
+var Main = {
+  Init(): function() {
+  }
+};
