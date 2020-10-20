@@ -5,7 +5,7 @@ var World = {
 		Calculate: function(m1, m2, dist) {
 			Force = ((constant * value) * m1 * m2) / (dist * dist);
 			return Force;
-		}
+		},
 		EscapeVelocityPlanet: function(planetMass, distance) {
 			Force = Math.sqrt((2 * constant * planetMass) / dist);
 			return Force;
@@ -16,5 +16,5 @@ var World = {
 			Force = (Length * densityFluid * velocity) / viscosity;
 			return Force;
 		}
-	},
+	}
 };
