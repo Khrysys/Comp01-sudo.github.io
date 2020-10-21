@@ -1,5 +1,5 @@
 var Main = {
-  Init(): function() {
+  Init: function() {
     Document.write("Initialized. V1.0.0. ");
   }
 };
