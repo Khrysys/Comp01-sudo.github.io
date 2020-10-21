@@ -1,18 +1,5 @@
 <html>
 	<head>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
-		<title>A Simulation</title>
-		<script src="scripts/neural.js"></script>
-		<script src="scripts/storage/planets.json"></script>
-		<script src="scripts/storage/sizes.json"></script>
-		<script src="scripts/main.js"></script>
-		<script src="scripts/builder.js"></script>
-		<script src="scripts/output.js"></script>
-		<script src="scripts/world.js"></script>
-		<script src="scripts/systemEdits.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
@@ -49,47 +36,51 @@
 			}
 
 			.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
-}
+            	background-color: red;
+			}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+		.dropdown-content {
+  			display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+       }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+		.dropdown-content a {
+  			float: none;
+  			color: black;
+  			padding: 12px 16px;
+  			text-decoration: none;
+  			display: block;
+  			text-align: left;
+		}
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+		.dropdown-content a:hover {
+  			background-color: #ddd;
+		}
 
-.show {
-  display: block;
-}
-</style>
+		.show {
+  			display: block;
+		}
+		</style>
 	</head>
+    
 	<body>
-		<div class="navbar">
-			<button class="dropbtn" onclick="myFunction()">Dropdown
-  				<i class="fa fa-caret-down"></i>
-  			</button>
-  			<div class="dropdown-content" id="myDropdown">
-				<div class="dropdown-content" id="MyDropdown">
-					<a href="https://comp01-sudo.github.io/">Home</a>
-					<a href="https://comp01-sudo.github.io/About.html">About This</a>
-				<div>
-			</div>
+    	<div class="navbar">
+  			<a href="#home">Home</a>
+  			<a href="#news">News</a>
+ 		 	<div class="dropdown">
+ 		 		<button class="dropbtn" onclick="myFunction()">Dropdown
+  					<i class="fa fa-caret-down"></i>
+ 				</button>
+  				<div class="dropdown-content" id="myDropdown">
+    				<a href="#">Home</a>
+    				<a href="#">About</a>
+    				<a href="#">Run</a>
+  				</div>
+  			</div> 
 		</div>
 	
   		<script>
