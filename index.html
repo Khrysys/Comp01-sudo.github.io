@@ -69,21 +69,23 @@
     
 	<body>
     	<div class="navbar">
- 		 	<div class="dropdown">
- 		 		<button class="dropbtn" onclick="myFunction()">Dropdown
-  					<i class="fa fa-caret-down"></i>
- 				</button>
-  				<div class="dropdown-content" id="myDropdown">
-    					<a href="#">Home</a>
-    					<a href="#">About</a>
-    					<a href="#">Run</a>
-  				</div>
-  			</div> 
-		</div>
+ 		 <div class="dropdown">
+ 			<button class="dropbtn" onclick="dropSUR()">Survival Simulator
+ 				<i class="fa fa-caret-down"></i>
+			 </button>
+  			<div class="dropdown-content" id="SURDropdown">
+    				<a href="https://comp01-sudo.github.io/SURSIM/Home.html">Home</a>
+    				<a href="https://comp01-sudo.github.io/SURSIM/About.html">About</a>
+    				<a href="https://comp01-sudo.github.io/SURSIM/Run.html">Run</a>
+				<a href="https://comp01-sudo.github.io/SURSIM/Download.html" target="_blank">Download</a>
+  			</div>
+  		</div> 
+		<button class="button" id="DarkMode" onclick"Dark()">
+	</div>
 	
   		<script>
-			function myFunction() {
-				document.getElementById("myDropdown").classList.toggle("show");
+			function dropSUR() {
+				document.getElementById("SURDropdown").classList.toggle("show");
 			}
 	
 			window.onclick = function(e) {
@@ -93,6 +95,12 @@
 						myDropdown.classList.remove('show');
 					}
 				}
+			}
+			
+			function Dark() {
+				document.getElementById("DarkMode").textContent = 'Light';
+   				var element = document.body;
+   				element.classList.toggle("dark-mode");
 			}
 		</script>
 	</body>
