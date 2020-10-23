@@ -2,4 +2,43 @@
   <head>
     <title>Home: LifeSim</title>
   </head>
+  <body>
+	   <div class="navbar">
+	 		 <div class="dropdown">
+ 				<button class="dropbtn" onclick="dropSUR()">Survival Simulator
+ 					<i class="fa fa-caret-down"></i>
+				</button>
+  				<div class="dropdown-content" id="SURDropdown">
+    					<a href="https://comp01-sudo.github.io/SURSIM/Home.html">Home</a>
+    					<a href="https://comp01-sudo.github.io/SURSIM/About.html">About</a>
+    					<a href="https://comp01-sudo.github.io/SURSIM/Docs.html">Docs</a>
+					<a href="https://comp01-sudo.github.io/SURSIM/Download.html" target="_blank">Download</a>
+  				</div>
+  			</div> 
+			<button class="dropbtn" onclick="dropSUR()">Survival Simulator
+ 					<i class="fa fa-caret-down"></i>
+				 </button>
+			<button class="button" id="DarkMode" onclick"Dark()">Dark Mode</button>
+		</div>
+	
+  		<script>
+			function dropSUR() {
+				document.getElementById("SURDropdown").classList.toggle("show");
+			}
+	
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+					if (myDropdown.classList.contains('show')) {
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			
+			function Dark() {
+				document.getElementById("DarkMode").textContent = 'Light';
+   				var element = document.body;
+   				element.classList.toggle("dark-mode");
+			}
+		</script>
 </html>
