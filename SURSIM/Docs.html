@@ -1,2 +1,153 @@
 <html>
+	<head>
+    <title>Docs for Survival Simulator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			.navbar {
+				overflow: hidden;
+				background-color: #333;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.navbar a {
+				float: left;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			
+			.dropdown {
+				float: left;
+				overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+				cursor: pointer;
+				font-size: 16px;  
+				border: none;
+				outline: none;
+				color: white;
+				padding: 14px 16px;
+				background-color: inherit;
+				font-family: inherit;
+				margin: 0;
+			}
+
+			.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+            			background-color: red;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+		       }
+
+			.dropdown-content a {
+  				float: none;
+  				color: black;
+  				padding: 12px 16px;
+  				text-decoration: none;
+  				display: block;
+  				text-align: left;
+			}
+
+			.dropdown-content a:hover {
+  				background-color: #ddd;
+			}
+
+			.show {
+  				display: block;
+			}
+			
+			.dark-mode {
+				background-color:black;
+				color:white;
+			}
+		</style>
+	</head>
+    
+	<body>
+	    	<div class="navbar">
+			<a href="https://comp01-sudo.github.io" id="bottle" onclick="document.location='https://comp01-sudo.github.io/';return false;" >
+				<img src="https://comp01-sudo.github.io/Central.png" alt="Return to the main page" class="thumbnails" style="width:32px;height:16px;"/>
+			</a>
+	 		<div class="dropdown">
+ 				<button class="dropbtn" onclick="dropSUR()">Survival Simulator
+ 					<i class="fa fa-caret-down"></i>
+				</button>
+  				<div class="dropdown-content" id="SURDropdown">
+    					<a href="https://comp01-sudo.github.io/SURSIM/Home.html">Home</a>
+    					<a href="https://comp01-sudo.github.io/SURSIM/About.html">About</a>
+    					<a href="https://comp01-sudo.github.io/SURSIM/Docs.html">Docs</a>
+					<a href="https://comp01-sudo.github.io/SURSIM/Download.html" target="_blank">Download</a>
+  				</div>
+  			</div> 
+			
+	 		<div class="dropdown">
+ 				<button class="dropbtn" onclick="dropOS()">Dragon OS
+ 					<i class="fa fa-caret-down"></i>
+				</button>
+  				<div class="dropdown-content" id="OSDropdown">
+    					<a href="https://comp01-sudo.github.io/OS/Home.html">Home</a>
+    					<a href="https://comp01-sudo.github.io/OS/About.html">About</a>
+    					<a href="https://comp01-sudo.github.io/OS/Docs.html">Docs</a>
+					<a href="https://comp01-sudo.github.io/OS/Download.html" target="_blank">Download</a>
+  				</div>
+  			</div> 
+			
+			<div class="dropdown">
+ 				<button class="dropbtn" onclick="dropADR()">Adarkroom Split
+ 					<i class="fa fa-caret-down"></i>
+				</button>
+  				<div class="dropdown-content" id="ADRDropdown">
+    					<a href="https://comp01-sudo.github.io/ADR/Home.html">Home</a>
+    					<a href="https://comp01-sudo.github.io/ADR/About.html">About</a>
+    					<a href="https://comp01-sudo.github.io/ADR/Docs.html">Docs</a>
+					<a href="https://comp01-sudo.github.io/ADR/play.html">Download</a>
+  				</div>
+  			</div> 
+			
+			<button class="button" id="DarkMode" onclick="Dark()">Dark Mode</button>
+		</div>
+	
+  		<script>
+			function dropSUR() {
+				document.getElementById("SURDropdown").classList.toggle("show");
+			}
+			
+			function dropOS() {
+				document.getElementById("OSDropdown").classList.toggle("show");
+			}
+			
+			function dropADR() {
+				document.getElementById("ADRDropdown").classList.toggle("show");
+			}
+			
+			window.onclick = function(e) {
+				if (!e.target.matches('.dropbtn')) {
+					var myDropdown = document.getElementById("myDropdown");
+					if (myDropdown.classList.contains('show')) {
+						myDropdown.classList.remove('show');
+					}
+				}
+			}
+			
+			function Dark() {
+				document.getElementById("DarkMode").textContent = 'Light';
+   				var element = document.body;
+   				element.classList.toggle("dark-mode");
+			}
+		</script>
+		
+		<h1>Downloads for The Survival Sumulator</h1>
+    <h2>Download latest</h2>
+    <a href="https://comp01-sudo.github.it/SURSIM/Downloads/latest.html">https://comp01-sudo.github.it/SURSIM/Downloads/latest</a>
+  </body>
 </html>
